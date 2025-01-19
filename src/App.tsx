@@ -7,7 +7,7 @@ function App() {
     return (
         <>
             <Header title="Dynamiska hundar" />
-            <Main title="Samlingen hämtas via Dog API" />
+            <Main title="Samling av hundar från Dog API" />
             <Footer />
         </>
     );
