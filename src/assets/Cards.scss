@@ -41,4 +41,13 @@
             color: #333;
         }
     }
+
+    @media only screen and (max-width: 800px) {
+        .site-content__card {
+            flex: 1 1 100% !important;
+            max-width: 100%;
+            width: 100%;
+            margin: 0;
+        }
+    }
 }
