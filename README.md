@@ -2,6 +2,8 @@
 
 Deluppgift i kursen DT210G.
 
+Finns att testköra här: https://jamesstomberg.github.io/
+
 ## React + TypeScript + Vite
 
 React + TypeScript + Vite har använts vid utveckling av applikationen via kommando "npm create vite@latest".
