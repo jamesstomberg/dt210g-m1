@@ -4,7 +4,7 @@ import './App.css';
 function App() {
     return (
         <>
-            <Header title="DT210G - Moment 1" />
+            <Header title="Dynamiska hundar" />
         </>
     );
 }
