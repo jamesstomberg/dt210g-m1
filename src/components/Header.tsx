@@ -20,7 +20,7 @@ export default function Header({ title }: { title: string }) {
                 </div>
             </div>
 
-            <Banner image={bannerImage}/>
+            <Banner image={bannerImage} alt="decorative banner image"/>
         </header>
     );
 }
