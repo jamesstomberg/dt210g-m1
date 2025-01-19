@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# DT210G - Moment 1 - James Stomberg
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Deluppgift i kursen DT210G.
 
-Currently, two official plugins are available:
+## React + TypeScript + Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React + TypeScript + Vite har använts vid utveckling av applikationen via kommando "npm create vite@latest".
 
-## Expanding the ESLint configuration
+## Komponenter
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Ett antal olika komponenter har utvecklats vid utförandet av uppgiften för att dela upp webbplatsen i mindre beståndsdelar. Ett urval av komponenter:
 
-- Configure the top-level `parserOptions` property like this:
+- Header
+- Footer
+- Main
+- SvgLogo
+- Cards
+- Card
+- Banner
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Hooks
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+En egen hook (funktion) har utvecklats för att smidigt kunna hämta data från externt API via GET-anrop. Denna hook inkluderar returnering av data, felhantering samt "loading"-state.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Styles
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Paketet sass-embedded har installerats för att kunna använda SASS. Endast ett fåtal globala styles har inkluderats i applikationen. Den mesta stylingen är komponent-specifik och importeras per komponent.
+
+## Innehåll / Data
+
+För att presentera en "samling" av data, hämtas ett antal slumpmässiga URL:er som leder till bilder på hundar. I respektive URL inkluderas ett rasnamn och ett bildnamn. Bild-URL används för att visa bilden på respektive hund på webbplatsen. URL bearbetas för att kunna ta ut rasen på varje hund och skriva ut den. Respektive bilds namn hämtas också ut från URL och används som alt-text på varje bild.
+
+## Klick-funktion
+
+En liten "klick-funktion" har implementerats som skriver ut vilken hund man klickar på överst på sidan.
+
+## Kommentarer
+
+Ett enklare projekt för att lära känna React och utvecklingsmiljön.
